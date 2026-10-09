@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặng Minh Phát — Media Editor & PR Student Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cinema: {
+                            900: '#0a0a0a',
+                            800: '#141414',
+                            700: '#1f1f1f',
+                            600: '#2e2e2e',
+                            500: '#404040',
+                        },
+                        accent: {
+                            light: '#f5f5f7',
+                            DEFAULT: '#e5e5e7',
+                            dark: '#86868b'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0a0a0a; color: #f5f5f7; }
+        .glass-panel { background: rgba(20, 20, 20, 0.7); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.08); }
+        .glow-effect { box-shadow: 0 0 50px -10px rgba(255, 255, 255, 0.05); }
+    </style>
+</head>
+<body class="bg-cinema-900 text-accent-light selection:bg-white selection:text-black">
+
+    <header class="fixed top-0 left-0 right-0 z-50 glass-panel border-b border-white/10 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#hero" class="text-lg font-bold tracking-wider uppercase flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-white animate-pulse"></span>
+                Minh Phát <span class="text-accent-dark font-light">/ Media Editor</span>
+            </a>
+            
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-accent-dark">
+                <a href="#about" class="hover:text-white transition">Về Tôi</a>
+                <a href="#skills" class="hover:text-white transition">Kỹ Năng</a>
+                <a href="#projects" class="hover:text-white transition">Video & Reels</a>
+                <a href="#contact" class="hover:text-white transition">Liên Hệ</a>
+            </nav>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-white text-black font-medium text-sm hover:bg-zinc-200 transition transform hover:scale-105">
+                Kết Nối Ngay ⚡️
+            </a>
+        </div>
+    </header>
+
+    <section id="hero" class="relative min-h-screen flex items-center justify-center pt-24 pb-16 px-6 overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.03)_0,transparent_70%)] pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center z-10">
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-panel text-xs text-zinc-300 font-medium">
+                    <i class="fa-solid fa-clapperboard text-white"></i> Sinh viên PR HUTECH • Chuyên gia Dựng phim & Sáng tạo nội dung
+                </div>
+                
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-none">
+                    Kể câu chuyện thương hiệu qua <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-zinc-400 to-zinc-600">thước phim có chiều sâu.</span>
+                </h1>
+                
+                <p class="text-base sm:text-lg text-accent-dark max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
+                    "Sinh viên năm cuối ngành Quan hệ Công chúng với hơn 2 năm kinh nghiệm dựng phim và sáng tạo nội dung đa nền tảng. Nhạy bén xu hướng, tối ưu hóa thông điệp thương hiệu!" 🎬✨
+                </p>
+
+                <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
+                    <a href="#projects" class="px-8 py-4 rounded-full bg-white text-black font-semibold hover:bg-zinc-200 transition shadow-lg shadow-white/5 flex items-center gap-2">
+                        Khám Phá Video <i class="fa-solid fa-arrow-down"></i>
+                    </a>
+                    <a href="https://drive.google.com/drive/folders/1xSTALcuE1lgYORSVX-rXARHwMpdOtaNE?usp=drive_link" target="_blank" class="px-8 py-4 rounded-full glass-panel font-semibold hover:bg-white/10 transition flex items-center gap-2">
+                        <i class="fa-brands fa-google-drive text-white"></i> Kho Drive Gốc 📂
+                    </a>
+                </div>
+            </div>
+
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative w-72 sm:w-80 lg:w-96 aspect-square rounded-3xl overflow-hidden glass-panel glow-effect p-3">
+                    <img src="https://lh3.googleusercontent.com/d/1ls2kt-lD8OTtcHEYcuRBFFWJ4m_WP7_x=s800" 
+                         onerror="this.src='https://placehold.co/600x600/141414/f5f5f7?text=Dang+Minh+Phat'"
+                         alt="Đặng Minh Phát" 
+                         class="w-full h-full object-cover rounded-2xl filter grayscale contrast-125 hover:grayscale-0 transition duration-500">
+                    <div class="absolute bottom-6 left-6 right-6 p-4 rounded-2xl glass-panel backdrop-blur-md flex items-center gap-3">
+                        <div class="w-3 h-3 rounded-full bg-emerald-500 animate-ping"></div>
+                        <span class="text-xs font-semibold uppercase tracking-wider text-zinc-200">Đang sẵn sàng cho dự án mới</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 px-6 border-t border-white/5 bg-cinema-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <h2 class="text-xs font-semibold tracking-widest uppercase text-accent-dark">Cá tính & Hành trình</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold">Kết hợp giữa Công nghệ & Nghệ thuật Thị giác</h3>
+                <p class="text-accent-dark font-light">Hành trình biến những ý tưởng truyền thông thành các sản phẩm video triệu view.</p>
+            </div>
+
+            <!-- 3 Main Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <div class="glass-panel p-8 rounded-3xl space-y-4 hover:border-white/20 transition">
+                    <div class="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center text-xl text-white">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <h4 class="text-xl font-bold">Học Vấn HUTECH</h4>
+                    <p class="text-sm text-accent-dark leading-relaxed">
+                        Cử nhân Quan hệ Công chúng (Khóa 2022-2026) với GPA 3.0/4.0. Nền tảng vững chắc về chiến lược truyền thông, giao tiếp tiếng Anh và tổ chức sự kiện lớn.
+                    </p>
+                </div>
+
+                <div class="glass-panel p-8 rounded-3xl space-y-4 hover:border-white/20 transition">
+                    <div class="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center text-xl text-white">
+                        <i class="fa-solid fa-video"></i>
+                    </div>
+                    <h4 class="text-xl font-bold">2+ Năm Kinh Nghiệm</h4>
+                    <p class="text-sm text-accent-dark leading-relaxed">
+                        Từng làm việc tại GOMAX SPORT và làm Freelancer Editor cho ATC Trung tâm trẻ em, Kamito Sports, Follow Nghệ Sĩ với hàng loạt số liệu tăng trưởng ấn tượng.
+                    </p>
+                </div>
+
+                <div class="glass-panel p-8 rounded-3xl space-y-4 hover:border-white/20 transition">
+                    <div class="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center text-xl text-white">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h4 class="text-xl font-bold">Tư Duy Trend-Catching</h4>
+                    <p class="text-sm text-accent-dark leading-relaxed">
+                        Nhạy bén xu hướng mạng xã hội (TikTok, Reels, Shorts), kết hợp AI (Gemini + ChatGPT) để tối ưu hóa quy trình lên kịch bản và sản xuất media.
+                    </p>
+                </div>
+            </div>
+
+            <!-- New Personality & Hobbies Detail Box -->
+            <div class="glass-panel p-8 sm:p-10 rounded-3xl border border-white/10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center bg-gradient-to-br from-white/[0.02] to-transparent">
+                <div class="space-y-4">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 text-xs text-zinc-300 font-medium">
+                        <i class="fa-solid fa-compass text-white"></i> Tính Cách & Thái Độ Làm Việc
+                    </div>
+                    <h4 class="text-2xl font-bold">Ham Học Hỏi & Cầu Tiến Mỗi Ngày</h4>
+                    <p class="text-sm text-accent-dark leading-relaxed font-light">
+                        Là một người năng động và luôn chủ động trau dồi kiến thức mới. Phát luôn giữ thái độ tích cực, cầu thị, biết lắng nghe mọi đóng góp ý kiến để hoàn thiện bản thân qua từng sản phẩm. Sở hữu kỹ năng làm việc nhóm vững vàng, khả năng giao tiếp tiếng Anh linh hoạt và tư duy ngoại giao nhạy bén.
+                    </p>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 text-xs text-zinc-300 font-medium">
+                        <i class="fa-solid fa-fire text-white"></i> Sở Thích & Năng Lượng Sống
+                    </h4>
+                    <h4 class="text-2xl font-bold">Thể Thao & Du Lịch Khám Phá</h4>
+                    <p class="text-sm text-accent-dark leading-relaxed font-light">
+                        Năng lượng sáng tạo của Phát được nuôi dưỡng từ đam mê vận động và trải nghiệm. Yêu thích các bộ môn thể thao như đá banh, bơi lội, leo núi, tập gym cùng niềm hứng khởi dịch chuyển qua những chuyến du lịch khám phá thế giới xung quanh.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 px-6 border-t border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <h2 class="text-xs font-semibold tracking-widest uppercase text-accent-dark">Kỹ Năng Chuyên Môn</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold">Bộ Công Cụ & Kỹ Năng Sáng Tạo</h3>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                <div class="glass-panel p-8 sm:p-10 rounded-3xl space-y-6">
+                    <h4 class="text-xl font-bold flex items-center gap-3">
+                        <i class="fa-solid fa-laptop-code text-zinc-400"></i> Phần Mềm & Công Cụ Hỗ Trợ
+                    </h4>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between text-sm mb-1 font-medium">
+                                <span>CapCut (Pro)</span>
+                                <span class="text-accent-dark">Thành thạo chuyên sâu</span>
+                            </div>
+                            <div class="w-full bg-zinc-800 h-2 rounded-full overflow-hidden">
+                                <div class="bg-white h-full rounded-full" style="width: 95%;"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-sm mb-1 font-medium">
+                                <span>Adobe Premiere & Lightroom</span>
+                                <span class="text-accent-dark">Cơ bản & Cân màu</span>
+                            </div>
+                            <div class="w-full bg-zinc-800 h-2 rounded-full overflow-hidden">
+                                <div class="bg-zinc-400 h-full rounded-full" style="width: 75%;"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-sm mb-1 font-medium">
+                                <span>AI Tools (Gemini + ChatGPT)</span>
+                                <span class="text-accent-dark">Lên ý tưởng kịch bản nhanh</span>
+                            </div>
+                            <div class="w-full bg-zinc-800 h-2 rounded-full overflow-hidden">
+                                <div class="bg-white h-full rounded-full" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-8 sm:p-10 rounded-3xl space-y-6">
+                    <h4 class="text-xl font-bold flex items-center gap-3">
+                        <i class="fa-solid fa-brain text-zinc-400"></i> Kỹ Năng Chuyên Môn & Mềm
+                    </h4>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="p-4 rounded-2xl bg-white/5 border border-white/5">
+                            <h5 class="font-semibold text-sm mb-1">🎬 Dựng Phim & Nhịp Điệu</h5>
+                            <p class="text-xs text-accent-dark">Cắt ghép nhịp điệu (Rhythmic Editing), lọc tạp âm và chọn nhạc bắt nhịp.</p>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-white/5 border border-white/5">
+                            <h5 class="font-semibold text-sm mb-1">📱 Biên Tập Đa Nền Tảng</h5>
+                            <p class="text-xs text-accent-dark">Tối ưu hóa video ngắn & dài cho TikTok, Reels, YouTube Shorts.</p>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-white/5 border border-white/5">
+                            <h5 class="font-semibold text-sm mb-1">🤝 Teamwork & Ngoại giao</h5>
+                            <p class="text-xs text-accent-dark">Làm việc nhóm hiệu quả, giao tiếp tiếng Anh và ngoại giao khéo léo.</p>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-white/5 border border-white/5">
+                            <h5 class="font-semibold text-sm mb-1">🔥 Trend-Catching</h5>
+                            <p class="text-xs text-accent-dark">Tư duy nhạy bén với xu hướng thị trường và tâm lý công chúng.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 px-6 border-t border-white/5 bg-cinema-800">
+        <div class="max-w-7xl mx-auto space-y-12">
+            <div class="text-center max-w-3xl mx-auto space-y-4">
+                <h2 class="text-xs font-semibold tracking-widest uppercase text-accent-dark">Video & Reels Portfolio</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold">Kho Video Sản Phẩm Thực Tế 🎥</h3>
+                <p class="text-accent-dark font-light">Tuyển tập các video tiếp thị thể thao, reels trung tâm trẻ em và các dự án đồng hành cùng nghệ sĩ.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Video Item 1 -->
+                <div class="glass-panel rounded-3xl overflow-hidden group hover:border-white/20 transition flex flex-col">
+                    <div class="relative aspect-video overflow-hidden">
+                        <img src="https://lh3.googleusercontent.com/d/1ls2kt-lD8OTtcHEYcuRBFFWJ4m_WP7_x=s800" 
+                             onerror="this.src='https://placehold.co/800x450/1f1f1f/f5f5f7?text=Gomax+Sport+Videos'"
+                             alt="Gomax Sport Video" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                            <a href="https://drive.google.com/drive/folders/1xSTALcuE1lgYORSVX-rXARHwMpdOtaNE?usp=drive_link" target="_blank" class="px-6 py-3 rounded-full bg-white text-black font-semibold text-sm flex items-center gap-2 transform translate-y-2 group-hover:translate-y-0 transition duration-300">
+                                <i class="fa-solid fa-play"></i> Xem Video Gomax Sport
+                            </a>
+                        </div>
+                        <div class="absolute top-4 left-4 px-3 py-1 rounded-full bg-black/70 backdrop-blur-md text-xs font-medium">
+                            GOMAX SPORT • Video Tiếp Thị
+                        </div>
+                    </div>
+                    <div class="p-8 space-y-4 flex-1 flex flex-col justify-between">
+                        <div class="space-y-3">
+                            <h5 class="text-xl font-bold">Chuỗi Video Tiếp Thị Thể Thao Tăng Tương Tác</h5>
+                            <p class="text-sm text-accent-dark leading-relaxed">
+                                Các dự án video sáng tạo dựa trên xu hướng, tối ưu hóa thông điệp sản phẩm thể thao giúp tăng trưởng mạnh mẽ các chỉ số kinh doanh.
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 pt-4 border-t border-white/5 text-center">
+                            <div class="p-2 bg-white/5 rounded-xl">
+                                <div class="text-base font-bold text-white">+30%</div>
+                                <div class="text-[10px] text-accent-dark uppercase">Tương tác</div>
+                            </div>
+                            <div class="p-2 bg-white/5 rounded-xl">
+                                <div class="text-base font-bold text-white">+25%</div>
+                                <div class="text-[10px] text-accent-dark uppercase">Khách tiềm năng</div>
+                            </div>
+                            <div class="p-2 bg-white/5 rounded-xl">
+                                <div class="text-base font-bold text-white">+45%</div>
+                                <div class="text-[10px] text-accent-dark uppercase">Traffic Web</div>
+                            </div>
+                        </div>
+                        <a href="https://drive.google.com/drive/folders/1xSTALcuE1lgYORSVX-rXARHwMpdOtaNE?usp=drive_link" target="_blank" class="w-full py-3.5 rounded-2xl bg-white text-black font-semibold hover:bg-zinc-200 transition text-center text-xs flex items-center justify-center gap-2 shadow-md">
+                            <i class="fa-brands fa-google-drive"></i> Xem Toàn Bộ Video Trên Google Drive <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Video Item 2 -->
+                <div class="glass-panel rounded-3xl overflow-hidden group hover:border-white/20 transition flex flex-col">
+                    <div class="relative aspect-video overflow-hidden">
+                        <img src="https://lh3.googleusercontent.com/d/1ls2kt-lD8OTtcHEYcuRBFFWJ4m_WP7_x=s800" 
+                             onerror="this.src='https://placehold.co/800x450/1f1f1f/f5f5f7?text=ATC+Kamito+Reels'"
+                             alt="ATC & Kamito Reels" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                            <a href="https://drive.google.com/drive/folders/1xSTALcuE1lgYORSVX-rXARHwMpdOtaNE?usp=drive_link" target="_blank" class="px-6 py-3 rounded-full bg-white text-black font-semibold text-sm flex items-center gap-2 transform translate-y-2 group-hover:translate-y-0 transition duration-300">
+                                <i class="fa-solid fa-play"></i> Xem Reels ATC & Kamito
+                            </a>
+                        </div>
+                        <div class="absolute top-4 left-4 px-3 py-1 rounded-full bg-black/70 backdrop-blur-md text-xs font-medium">
+                            FREELANCER • ATC & Kamito & Nghệ SĨ
+                        </div>
+                    </div>
+                    <div class="p-8 space-y-4 flex-1 flex flex-col justify-between">
+                        <div class="space-y-3">
+                            <h5 class="text-xl font-bold">Biên Tập Video Thể Thao Trẻ Em & Follow Nghệ Sĩ</h5>
+                            <p class="text-sm text-accent-dark leading-relaxed">
+                                Sản xuất các thước phim ngắn năng động cho trung tâm trẻ em (bóng đá, pickleball) và các nội dung đồng hành cùng nghệ sĩ nổi bật trên đa nền tảng.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-white/5 flex items-center justify-between text-xs text-accent-dark">
+                            <span>Định dạng: Short-form / TikTok / Reels</span>
+                            <span class="text-white font-semibold">Nhịp điệu bắt tai</span>
+                        </div>
+                        <a href="https://drive.google.com/drive/folders/1xSTALcuE1lgYORSVX-rXARHwMpdOtaNE?usp=drive_link" target="_blank" class="w-full py-3.5 rounded-2xl bg-white text-black font-semibold hover:bg-zinc-200 transition text-center text-xs flex items-center justify-center gap-2 shadow-md">
+                            <i class="fa-brands fa-google-drive"></i> Xem Toàn Bộ Reels Trên Google Drive <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 px-6 border-t border-white/5">
+        <div class="max-w-4xl mx-auto text-center space-y-12">
+            <div class="space-y-4">
+                <h2 class="text-xs font-semibold tracking-widest uppercase text-accent-dark">Contact</h2>
+                <h3 class="text-3xl sm:text-5xl font-bold">Hãy Kết Nối Cùng Nhau! 🚀</h3>
+                <p class="text-accent-dark font-light max-w-xl mx-auto">
+                    Bạn đang tìm kiếm một Video Editor trẻ trung, năng động và giàu tư duy truyền thông? Hãy nhắn cho tôi nhé!
+                </p>
+            </div>
+
+            <!-- Custom User Thank You Message Box -->
+            <div class="glass-panel p-8 sm:p-10 rounded-3xl text-center space-y-4 max-w-2xl mx-auto border border-white/10 bg-gradient-to-b from-white/[0.03] to-transparent">
+                <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center mx-auto text-white text-xl">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <p class="text-sm sm:text-base text-accent-light leading-relaxed font-light italic">
+                    "Cảm ơn quý anh chị đã dành thời gian xem qua Portfolio của em. Rất mong sẽ được hợp tác cùng các anh chị trong dự án sắp tới. Vì là một người ham học hỏi nên em rất vui lòng khi nghe ý kiến cải thiện của quý anh chị để cải thiện sản phẩm tiếp theo."
+                </p>
+                <div class="text-xs font-semibold text-accent-dark uppercase tracking-widest">— Đặng Minh Phát</div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-left">
+                <a href="tel:0963431548" class="glass-panel p-6 rounded-3xl space-y-2 hover:border-white/20 transition block">
+                    <div class="text-accent-dark text-sm"><i class="fa-solid fa-phone mr-2 text-white"></i> Điện thoại</div>
+                    <div class="font-semibold text-lg">0963 431 548</div>
+                </a>
+
+                <a href="mailto:minhphat030104@gmail.com" class="glass-panel p-6 rounded-3xl space-y-2 hover:border-white/20 transition block">
+                    <div class="text-accent-dark text-sm"><i class="fa-solid fa-envelope mr-2 text-white"></i> Email</div>
+                    <div class="font-semibold text-sm truncate">minhphat030104@gmail.com</div>
+                </a>
+
+                <a href="https://www.facebook.com/MinhPhats3014/" target="_blank" class="glass-panel p-6 rounded-3xl space-y-2 hover:border-white/20 transition block">
+                    <div class="text-accent-dark text-sm"><i class="fa-brands fa-facebook mr-2 text-white"></i> Facebook</div>
+                    <div class="font-semibold text-lg">Minh Phát</div>
+                </a>
+            </div>
+
+            <div class="pt-6 text-xs text-accent-dark space-y-2">
+                <p>📍 Địa chỉ: 53/1 Trần Văn Cần, TP. HỒ CHÍ MINH</p>
+                <p>© 2026 Đặng Minh Phát. Designed with passion & creativity.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
